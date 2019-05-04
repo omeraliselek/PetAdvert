@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PetAdvert.Service.Option
 {
-    public class PettypeService:ServiceBase<GeneralSetting>
+    public class PettypeService:ServiceBase<Pettype>
     {
 
     }

@@ -100,6 +100,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdvertisementController.cs" />
     <Compile Include="Areas\Admin\Models\DTO\AdvertisementDTO.cs" />
     <Compile Include="Areas\Admin\Models\DTO\AppUserDTO.cs" />
     <Compile Include="Areas\Admin\Models\DTO\BaseDTO.cs" />
@@ -111,6 +112,16 @@
     <Compile Include="Areas\Admin\Models\DTO\QuestionAnswerDTO.cs" />
     <Compile Include="Areas\Admin\Models\DTO\RaceDTO.cs" />
     <Compile Include="Areas\Admin\Models\DTO\StaticPageDTO.cs" />
+    <Compile Include="Areas\Admin\Models\VM\AddAdvertisementVM.cs" />
+    <Compile Include="Areas\Admin\Models\VM\AddAppUserWM.cs" />
+    <Compile Include="Areas\Admin\Models\VM\AddDistrictWM.cs" />
+    <Compile Include="Areas\Admin\Models\VM\AddMessageWM.cs" />
+    <Compile Include="Areas\Admin\Models\VM\AddRaceWM.cs" />
+    <Compile Include="Areas\Admin\Models\VM\BaseVM.cs" />
+    <Compile Include="Areas\Admin\Models\VM\UpdateAdvertisementVM.cs" />
+    <Compile Include="Areas\Admin\Models\VM\UpdateAppUserWM.cs" />
+    <Compile Include="Areas\Admin\Models\VM\UpdateDistrictWM.cs" />
+    <Compile Include="Areas\Admin\Models\VM\UpdateRaceWM.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -119,6 +130,7 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="Areas\Admin\Views\web.config" />
+    <Content Include="Areas\Admin\Views\Shared\_AdminLayoutPage.cshtml" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -129,8 +141,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Controllers\" />
-    <Folder Include="Areas\Admin\Views\Shared\" />
+    <Folder Include="Areas\Admin\Views\Advertisement\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
