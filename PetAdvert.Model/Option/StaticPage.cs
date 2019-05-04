@@ -7,11 +7,9 @@ using System.Threading.Tasks;
 
 namespace PetAdvert.Model.Option
 {
-     //Statik Sayfalar
-
-    public class StaticPages:CoreEntity,ISeo
+    public class StaticPage: CoreEntity, ISeo
     {
-        public string PageName { get ; set; }
+        public string PageName { get; set; }
         public string Detail { get; set; }
         public string SeoTitle { get { return SeoTitle; } set { SeoTitle = value; } }
         public string SeoDescription { get { return SeoDescription; } set { SeoDescription = value; } }

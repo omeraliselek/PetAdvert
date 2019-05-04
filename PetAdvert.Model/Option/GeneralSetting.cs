@@ -7,8 +7,7 @@ using System.Threading.Tasks;
 
 namespace PetAdvert.Model.Option
 {
-    //Sitenin Genel Ayarları
-    public class GeneralSettings: CoreEntity, ISeo
+   public class GeneralSetting: CoreEntity, ISeo
     {
         public string Email { get; set; }
         public short Telephone { get; set; }
@@ -20,7 +19,7 @@ namespace PetAdvert.Model.Option
         public string CopyrightText { get; set; }
         public string Googleplay { get; set; }
         public string AppStore { get; set; }
-        public string SeoTitle { get ; set ; }
-        public string SeoDescription { get; set ; }
+        public string SeoTitle { get; set; }
+        public string SeoDescription { get; set; }
     }
 }

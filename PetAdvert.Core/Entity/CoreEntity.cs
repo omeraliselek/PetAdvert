@@ -18,7 +18,7 @@ namespace PetAdvert.Core.Entity
             this.CreatedIP = "123";
         }
 
-        public Guid ID { get; set; } //Stardart ID
+        public int ID { get; set; } //Stardart ID
         public Guid MasterID { get; set; } //Üst Düzey Yönetici için ID
         public DateTime? CreatedDate { get; set; } //İşlemin Oluşturulma Tarihi
         public string CreatedComputerName { get; set; } // işlemi Yapan Bilgisayarın Adı

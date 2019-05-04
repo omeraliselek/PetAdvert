@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetAdvert.Model", "PetAdver
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetAdvert.Map", "PetAdvert.Map\PetAdvert.Map.csproj", "{29D6C6C5-18E0-48B4-9E87-50071511E36F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetAdvert.Utility", "PetAdvert.Utility\PetAdvert.Utility.csproj", "{D3C0D48B-C466-48A7-9A60-BD230BCC7139}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetAdvert.DAL", "PetAdvert.DAL\PetAdvert.DAL.csproj", "{1D008F1F-CED4-4E34-984E-88B39A8FB56F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{29D6C6C5-18E0-48B4-9E87-50071511E36F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{29D6C6C5-18E0-48B4-9E87-50071511E36F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{29D6C6C5-18E0-48B4-9E87-50071511E36F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3C0D48B-C466-48A7-9A60-BD230BCC7139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3C0D48B-C466-48A7-9A60-BD230BCC7139}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3C0D48B-C466-48A7-9A60-BD230BCC7139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3C0D48B-C466-48A7-9A60-BD230BCC7139}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D008F1F-CED4-4E34-984E-88B39A8FB56F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D008F1F-CED4-4E34-984E-88B39A8FB56F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D008F1F-CED4-4E34-984E-88B39A8FB56F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D008F1F-CED4-4E34-984E-88B39A8FB56F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

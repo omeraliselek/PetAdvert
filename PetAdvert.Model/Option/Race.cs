@@ -12,9 +12,9 @@ namespace PetAdvert.Model.Option
         public string RaceName { get; set; }
         public string SeoTitle { get; set ; }
         public string SeoDescription { get; set; }
-        public virtual List<Pettype> Pettypes { get; set; }
-        public int AdvertisementID { get; set; }
-        public virtual Advertisement Advertisement { get; set; }
+        public int PettypeID { get; set; }
+        public virtual Pettype Pettype { get; set; }
+        public virtual List<Advertisement> Advertisements { get; set; } //Mesajlaşma Sistemi
 
     }
 }

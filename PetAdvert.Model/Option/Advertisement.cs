@@ -23,7 +23,9 @@ namespace PetAdvert.Model.Option
         public virtual District District { get; set; }
         public int AppUserID { get; set; }
         public virtual AppUser AppUser { get; set; }
-        public virtual List<Race> Races { get; set; }
+        public int RaceID { get; set; }
+        public virtual Race Race { get; set; }
+        
 
     }
 }

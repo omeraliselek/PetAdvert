@@ -11,8 +11,7 @@ namespace PetAdvert.Model.Option
     public class City: CoreEntity,ISeo
     {
         public string Il { get; set; }
-        public int DistrictID { get; set; }
-        public virtual District District { get; set; }
+        public virtual List<District> Districts { get; set; }
         public string SeoTitle { get { return SeoTitle; } set { SeoTitle = value; } }
         public string SeoDescription { get { return SeoDescription; } set {SeoDescription= value; } }
     }

@@ -48,11 +48,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Option\AdvertisementMap.cs" />
+    <Compile Include="Option\AppUserMap.cs" />
+    <Compile Include="Option\CityMap.cs" />
+    <Compile Include="Option\DistrictMap.cs" />
+    <Compile Include="Option\GeneralSettingMap.cs" />
+    <Compile Include="Option\MessageMap.cs" />
+    <Compile Include="Option\PettypeMap.cs" />
+    <Compile Include="Option\QuestionAnswerMap.cs" />
+    <Compile Include="Option\RaceMap.cs" />
+    <Compile Include="Option\StaticPageMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PetAdvert.Core\PetAdvert.Core.csproj">
+      <Project>{c3eb06d7-70ad-447c-9541-5f9e81a4ac16}</Project>
+      <Name>PetAdvert.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PetAdvert.Model\PetAdvert.Model.csproj">
+      <Project>{93ae2c6c-fa73-4159-b63d-2966416dca4c}</Project>
+      <Name>PetAdvert.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
