@@ -19,11 +19,11 @@ namespace PetAdvert.Model.Option
         public  string Detail { get; set; }
         public string SeoTitle { get; set ; }
         public string SeoDescription { get; set; }
-        public int DistrictID { get; set; }
+        public Guid DistrictID { get; set; }
         public virtual District District { get; set; }
-        public int AppUserID { get; set; }
+        public Guid AppUserID { get; set; }
         public virtual AppUser AppUser { get; set; }
-        public int RaceID { get; set; }
+        public Guid RaceID { get; set; }
         public virtual Race Race { get; set; }
         
 

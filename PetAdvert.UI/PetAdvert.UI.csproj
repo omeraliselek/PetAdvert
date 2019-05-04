@@ -43,6 +43,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -93,6 +99,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -100,6 +107,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
+    <Content Include="Areas\Admin\Views\web.config" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -110,8 +118,37 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Controllers\" />
+    <Folder Include="Areas\Admin\Models\" />
+    <Folder Include="Areas\Admin\Views\Shared\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PetAdvert.Core\PetAdvert.Core.csproj">
+      <Project>{c3eb06d7-70ad-447c-9541-5f9e81a4ac16}</Project>
+      <Name>PetAdvert.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PetAdvert.DAL\PetAdvert.DAL.csproj">
+      <Project>{1d008f1f-ced4-4e34-984e-88b39a8fb56f}</Project>
+      <Name>PetAdvert.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PetAdvert.Map\PetAdvert.Map.csproj">
+      <Project>{29d6c6c5-18e0-48b4-9e87-50071511e36f}</Project>
+      <Name>PetAdvert.Map</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PetAdvert.Model\PetAdvert.Model.csproj">
+      <Project>{93ae2c6c-fa73-4159-b63d-2966416dca4c}</Project>
+      <Name>PetAdvert.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PetAdvert.Service\PetAdvert.Service.csproj">
+      <Project>{6880f2ad-b036-4b79-8206-2217677fabd1}</Project>
+      <Name>PetAdvert.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PetAdvert.Utility\PetAdvert.Utility.csproj">
+      <Project>{d3c0d48b-c466-48a7-9a60-bd230bcc7139}</Project>
+      <Name>PetAdvert.Utility</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -11,7 +11,7 @@ namespace PetAdvert.Model.Option
    public class Message: CoreEntity
     {
         public string Subject { get; set; }
-        public int AppUserID { get; set; }
+        public Guid AppUserID { get; set; }
         public virtual AppUser AppUser { get; set; }
     }
 }

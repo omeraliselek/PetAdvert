@@ -13,7 +13,7 @@ namespace PetAdvert.Model.Option
 
         public string Ilce { get; set; }
 
-        public int CityID { get; set; }
+        public Guid CityID { get; set; }
         public virtual City City { get; set; }
         public virtual List<Advertisement> Advertisements { get; set; }
         public string SeoTitle { get; set ; }
