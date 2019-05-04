@@ -100,6 +100,17 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Models\DTO\AdvertisementDTO.cs" />
+    <Compile Include="Areas\Admin\Models\DTO\AppUserDTO.cs" />
+    <Compile Include="Areas\Admin\Models\DTO\BaseDTO.cs" />
+    <Compile Include="Areas\Admin\Models\DTO\CityDTO.cs" />
+    <Compile Include="Areas\Admin\Models\DTO\DistrictDTO.cs" />
+    <Compile Include="Areas\Admin\Models\DTO\GeneralSettingDTO.cs" />
+    <Compile Include="Areas\Admin\Models\DTO\MessageDTO.cs" />
+    <Compile Include="Areas\Admin\Models\DTO\PettypeDTO.cs" />
+    <Compile Include="Areas\Admin\Models\DTO\QuestionAnswerDTO.cs" />
+    <Compile Include="Areas\Admin\Models\DTO\RaceDTO.cs" />
+    <Compile Include="Areas\Admin\Models\DTO\StaticPageDTO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -119,7 +130,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Controllers\" />
-    <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Admin\Views\Shared\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
