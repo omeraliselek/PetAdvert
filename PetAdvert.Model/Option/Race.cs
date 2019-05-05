@@ -14,7 +14,7 @@ namespace PetAdvert.Model.Option
         public string SeoDescription { get; set; }
         public Guid PettypeID { get; set; }
         public virtual Pettype Pettype { get; set; }
-        public virtual List<Advertisement> Advertisements { get; set; } //Mesajlaşma Sistemi
+        public virtual List<Advertisement> Advertisements { get; set; } 
 
     }
 }
