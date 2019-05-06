@@ -1,0 +1,93 @@
+﻿
+@{
+    ViewBag.Title = "Add";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayoutPage.cshtml";
+}
+
+@model PetAdvert.UI.Areas.Admin.Models.DTO.GeneralSettingDTO
+<!-- partial -->
+<div class="container-fluid page-body-wrapper">
+    <div class="main-panel">
+        <div class="content-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Genel Ayarlar</h4>
+                            <form class="cmxform" id="signupForm" method="post" action="/Admin/GeneralSetting/Add">
+                                <fieldset>
+                                    <div class="form-group">
+                                        <label for="SeoTitle">Site Başlığı</label>
+                                        <input id="SeoTitle" class="form-control" name="SeoTitle" type="text" placeholder="Site Başlığını Buraya Yazınız.">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="SeoDescription">Site Açıklaması</label>
+                                        <input id="SeoDescription" class="form-control" name="SeoDescription" type="text" placeholder="Site Açıklamasını Buraya Yazınız.">
+                                    </div>
+                                    
+
+                       <div class="form-group">
+                                        <label for="Email">Email</label>
+                                        <input id="Email" class="form-control" name="Email" type="Email" placeholder="E-Posta Adresinizi Buraya Yazınız.">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="Telephone">Telefon</label>
+                                        <input id="Telephone" class="form-control" name="Telephone" type="text" placeholder="Telefon Numaranızı Yazınız.">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="Facebook">Facebook</label>
+                                        <input id="Facebook" class="form-control" name="Facebook" type="text" placeholder="Facebook Adresinizi Yazınız.">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="Twitter">Twitter</label>
+                                        <input id="Twitter" class="form-control" name="Twitter" type="text" placeholder="Twitter Adresinizi Yazınız.">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="instagram">İnstagram</label>
+                                        <input id="instagram" class="form-control" name="instagram" type="text" placeholder="İsntagram Adresinizi Yazınız.">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="Pinterest">Pinterest</label>
+                                        <input id="Pinterest" class="form-control" name="Pinterest" type="text" placeholder="Pinterest Adresinizi Yazınız.">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="Youtube">Youtube</label>
+                                        <input id="Youtube" class="form-control" name="Youtube" type="text" placeholder="Youtube Adresinizi Yazınız.">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="CopyrightText">Alt Text</label>
+                                        <input id="CopyrightText" class="form-control" name="CopyrightText" type="text" placeholder="Telif Yazınızı Buraya Yazınız" >
+                                    </div>
+
+
+
+                                    <div class="form-group">
+                                        <label for="Googleplay">Google Play</label>
+                                        <input id="Googleplay" class="form-control" name="Googleplay" type="text" placeholder="Google Play Adresinizi Buraya Yazınız">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="AppStore">AppStore</label>
+                                        <input id="AppStore" class="form-control" name="AppStore" type="text" placeholder="Appstore Adresinizi Buraya Yazınız">
+                                    </div>
+
+
+
+
+
+                                    <input class="btn btn-primary" type="submit" value="Submit">
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+

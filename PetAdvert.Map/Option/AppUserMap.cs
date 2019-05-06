@@ -30,13 +30,6 @@ namespace PetAdvert.Map.Option
 
             HasMany(x => x.Advertisements)//Birden fazla ürünü olacaktır.
                 .WithRequired(x => x.AppUser)//Bir ürünün bir kategorisi olur.
-                .HasForeignKey(x => x.AppUserID);
-
-
-            HasMany(x => x.Messages)//Birden fazla ürünü olacaktır.
-                .WithRequired(x => x.AppUser)//Bir ürünün bir kategorisi olur.
-                .HasForeignKey(x => x.AppUserID);
-
-        }
+                .HasForeignKey(x => x.AppUserID);}
     }
 }

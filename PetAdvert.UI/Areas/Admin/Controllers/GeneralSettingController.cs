@@ -37,6 +37,12 @@ namespace PetAdvert.UI.Areas.Admin.Controllers
 
         public ActionResult Update(Guid id)
         {
+            //if (id == null)
+            //{
+            //    List<GeneralSetting> modelList = _generalSettingService.GetActive();
+            //    return View("List", modelList);
+            //}
+
             GeneralSetting General = _generalSettingService.GetByID(id);
             GeneralSettingDTO model = new GeneralSettingDTO();
             model.ID = General.ID;
@@ -74,7 +80,8 @@ namespace PetAdvert.UI.Areas.Admin.Controllers
             General.SeoDescription = General.SeoDescription;
             _generalSettingService.Update(General);
             TempData["Successful"] = "Transaction is successful.";
-            return Redirect("/Admin/GeneralSetting/List");
+            //return Redirect("/Admin/GeneralSetting/Update");
+            return RedirectToAction("List");
         }
 
         public ActionResult Delete(Guid id)

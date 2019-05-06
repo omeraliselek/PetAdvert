@@ -54,7 +54,6 @@
     <Compile Include="Option\CityService.cs" />
     <Compile Include="Option\DistrictService.cs" />
     <Compile Include="Option\GeneralSettingService.cs" />
-    <Compile Include="Option\MessageService.cs" />
     <Compile Include="Option\PettypeService.cs" />
     <Compile Include="Option\QuestionAnswerService.cs" />
     <Compile Include="Option\RaceService.cs" />

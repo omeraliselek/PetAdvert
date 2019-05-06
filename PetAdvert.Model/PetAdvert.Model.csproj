@@ -47,7 +47,6 @@
     <Compile Include="Option\District.cs" />
     <Compile Include="Option\GeneralSetting.cs" />
     <Compile Include="Option\ISeo.cs" />
-    <Compile Include="Option\Message.cs" />
     <Compile Include="Option\Pettype.cs" />
     <Compile Include="Option\QuestionAnswer.cs" />
     <Compile Include="Option\Race.cs" />

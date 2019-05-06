@@ -14,7 +14,7 @@ namespace PetAdvert.Map.Option
         {
             ToTable("db.GeneralSettings");
             Property(x => x.Email).HasMaxLength(150).IsOptional();
-            Property(x => x.Telephone).IsOptional();
+            Property(x => x.Telephone).HasMaxLength(11).IsOptional();
             Property(x => x.Facebook).HasMaxLength(150).IsOptional();
             Property(x => x.Twitter).HasMaxLength(150).IsOptional();
             Property(x => x.instagram).HasMaxLength(150).IsOptional();
@@ -23,8 +23,8 @@ namespace PetAdvert.Map.Option
             Property(x => x.CopyrightText).HasMaxLength(180).IsOptional();
             Property(x => x.Googleplay).HasMaxLength(150).IsOptional();
             Property(x => x.AppStore).HasMaxLength(150).IsOptional();
-            Property(x => x.SeoTitle).HasMaxLength(72).IsOptional();
-            Property(x => x.SeoDescription).HasMaxLength(160).IsOptional();
+            Property(x => x.SeoTitle).HasMaxLength(150).IsOptional();
+            Property(x => x.SeoDescription).HasMaxLength(180).IsOptional();
 
 
 

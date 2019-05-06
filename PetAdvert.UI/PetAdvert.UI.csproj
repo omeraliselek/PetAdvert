@@ -788,10 +788,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\AdvertisementController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CityController.cs" />
+    <Compile Include="Areas\Admin\Controllers\DistrictController.cs" />
     <Compile Include="Areas\Admin\Controllers\GeneralSettingController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\PettypeController.cs" />
     <Compile Include="Areas\Admin\Controllers\QuestionAnswerController.cs" />
+    <Compile Include="Areas\Admin\Controllers\RaceController.cs" />
     <Compile Include="Areas\Admin\Controllers\StaticPageController.cs" />
     <Compile Include="Areas\Admin\Models\DTO\AdvertisementDTO.cs" />
     <Compile Include="Areas\Admin\Models\DTO\AppUserDTO.cs" />
@@ -799,7 +802,6 @@
     <Compile Include="Areas\Admin\Models\DTO\CityDTO.cs" />
     <Compile Include="Areas\Admin\Models\DTO\DistrictDTO.cs" />
     <Compile Include="Areas\Admin\Models\DTO\GeneralSettingDTO.cs" />
-    <Compile Include="Areas\Admin\Models\DTO\MessageDTO.cs" />
     <Compile Include="Areas\Admin\Models\DTO\PettypeDTO.cs" />
     <Compile Include="Areas\Admin\Models\DTO\QuestionAnswerDTO.cs" />
     <Compile Include="Areas\Admin\Models\DTO\RaceDTO.cs" />
@@ -807,7 +809,6 @@
     <Compile Include="Areas\Admin\Models\VM\AddAdvertisementVM.cs" />
     <Compile Include="Areas\Admin\Models\VM\AddAppUserWM.cs" />
     <Compile Include="Areas\Admin\Models\VM\AddDistrictWM.cs" />
-    <Compile Include="Areas\Admin\Models\VM\AddMessageWM.cs" />
     <Compile Include="Areas\Admin\Models\VM\AddRaceWM.cs" />
     <Compile Include="Areas\Admin\Models\VM\BaseVM.cs" />
     <Compile Include="Areas\Admin\Models\VM\UpdateAdvertisementVM.cs" />
@@ -856,6 +857,9 @@
     <Content Include="Content\vendors\summernote\dist\font\summernote.ttf" />
     <Content Include="Content\vendors\summernote\dist\font\summernote.woff" />
     <Content Include="Areas\Admin\Views\Advertisement\Add.cshtml" />
+    <Content Include="Areas\Admin\Views\GeneralSetting\Add.cshtml" />
+    <Content Include="Areas\Admin\Views\GeneralSetting\Update.cshtml" />
+    <Content Include="Areas\Admin\Views\GeneralSetting\List.cshtml" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -866,9 +870,11 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Admin\Views\GeneralSetting\" />
+    <Folder Include="Areas\Admin\Views\City\" />
+    <Folder Include="Areas\Admin\Views\District\" />
     <Folder Include="Areas\Admin\Views\Pettype\" />
     <Folder Include="Areas\Admin\Views\QuestionAnswer\" />
+    <Folder Include="Areas\Admin\Views\Race\" />
     <Folder Include="Areas\Admin\Views\StaticPage\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />

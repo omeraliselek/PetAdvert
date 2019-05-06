@@ -27,7 +27,6 @@ namespace PetAdvert.Model.Option
         public string XSmallUserImage { get; set; }
         public string CruptedUserImage { get; set; }
         public virtual List<Advertisement> Advertisements { get; set; } //ilanlarda Listele
-        public virtual List<Message> Messages { get; set; } //Mesajlaşma Sistemi
-        public virtual List<District> Districts { get; set; } // İl ve İlçe 
+       public virtual List<District> Districts { get; set; } // İl ve İlçe 
     }
 }

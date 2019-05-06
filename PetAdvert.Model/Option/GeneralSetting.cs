@@ -10,7 +10,7 @@ namespace PetAdvert.Model.Option
    public class GeneralSetting: CoreEntity, ISeo
     {
         public string Email { get; set; }
-        public short Telephone { get; set; }
+        public string Telephone { get; set; }
         public string Facebook { get; set; }
         public string Twitter { get; set; }
         public string instagram { get; set; }

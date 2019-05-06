@@ -17,7 +17,7 @@ namespace PetAdvert.DAL.Context
     {
         public ProjectContext()
         {
-            Database.Connection.ConnectionString = "Server=.;Database=PetDatabase;uid=tnr;pwd=123456;";
+            Database.Connection.ConnectionString = "Server=.;Database=PetBasem;uid=tnr;pwd=123456;";
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -27,7 +27,7 @@ namespace PetAdvert.DAL.Context
             modelBuilder.Configurations.Add(new CityMap());
             modelBuilder.Configurations.Add(new DistrictMap());
             modelBuilder.Configurations.Add(new GeneralSettingMap());
-            modelBuilder.Configurations.Add(new MessageMap());
+            
             modelBuilder.Configurations.Add(new PettypeMap());
             modelBuilder.Configurations.Add(new QuestionAnswerMap());
             modelBuilder.Configurations.Add(new RaceMap());
@@ -43,7 +43,6 @@ namespace PetAdvert.DAL.Context
         public DbSet<City> Cities { get; set; }
         public DbSet<District> Districts { get; set; }
         public DbSet<GeneralSetting> generalSettings { get; set; }
-        public DbSet<Message> messages { get; set; }
         public DbSet<Pettype> Pettypes { get; set; }
         public DbSet<QuestionAnswer> questionAnswers { get; set; }
         public DbSet<Race> Races { get; set; }

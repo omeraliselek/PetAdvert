@@ -1,0 +1,104 @@
+﻿
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayoutPage.cshtml";
+}
+@model IEnumerable<PetAdvert.Model.Option.GeneralSetting>
+
+<!-- partial -->
+<!-- partial -->
+<!-- partial -->
+<div class="container-fluid page-body-wrapper">
+    <div class="main-panel">
+        <div class="content-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Genel Ayarlar</h4>
+                           
+                            <fieldset>
+
+                                @foreach (var item in Model)
+                                {
+
+
+                                    <div class="form-group">
+                                        <label for="SeoTitle"><i class="link-icon   icon-pencil"></i> Site Başlığı</label>
+                                        <input id="SeoTitle" class="form-control" value="@item.SeoTitle" name="SeoTitle" type="text" placeholder="Site Başlığını Buraya Yazınız." disabled>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="SeoDescription"><i class="link-icon icon-pencil"></i> Site Açıklaması</label>
+                                        <input id="SeoDescription" class="form-control" value="@item.SeoDescription" name="SeoDescription" type="text" placeholder="Site Açıklamasını Buraya Yazınız." disabled>
+                                    </div>
+                                    
+
+                            <div class="form-group">
+                                        <label for="Email"><i class="link-icon  icon-direction"></i> Email</label>
+                                        <input id="Email" class="form-control" name="Email" value="@item.Email" type="Email" disabled>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="Telephone"> <i class="link-icon   icon-call-out"></i> Telefon</label>
+                                        <input id="Telephone" class="form-control" name="Telephone" value="@item.Telephone" type="text" disabled>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="Facebook"> <i class="link-icon   icon-social-facebook"></i> Facebook</label>
+                                        <input id="Facebook" class="form-control" name="Facebook" value="@item.Facebook" type="text" disabled>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="Twitter"> <i class="link-icon  icon-social-twitter"></i> Twitter</label>
+                                        <input id="Twitter" class="form-control" name="Twitter" value="@item.Twitter" type="text" disabled>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="instagram"><i class="link-icon  icon-social-instagram"></i> İnstagram</label>
+                                        <input id="instagram" class="form-control" name="instagram" value="@item.instagram" type="text" disabled>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="Pinterest"><i class="link-icon   icon-social-pinterest"></i> Pinterest</label>
+                                        <input id="Pinterest" class="form-control" name="Pinterest" value="@item.Pinterest" type="text" disabled>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="Youtube"><i class="link-icon   icon-social-youtube"></i> Youtube</label>
+                                        <input id="Youtube" class="form-control" name="Youtube" value="@item.Youtube" type="text" disabled>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="CopyrightText"><i class="link-icon   icon-info"></i> Alt Text</label>
+                                        <input id="CopyrightText" class="form-control" value="@item.CopyrightText" name="CopyrightText" type="text" disabled>
+                                    </div>
+
+
+
+                                    <div class="form-group">
+                                        <label for="Googleplay"><i class="link-icon   icon-link"></i> Google Play</label>
+                                        <input id="Googleplay" class="form-control" name="Googleplay" value="@item.Googleplay" type="text" disabled>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="AppStore"><i class="link-icon   icon-link"></i> AppStore</label>
+                                        <input id="AppStore" class="form-control" name="AppStore" value="@item.AppStore" disabled>
+                                    </div>
+
+
+
+                                    /*
+                                     */
+                                    <a href="/Admin/GeneralSetting/Update/@item.ID">
+                                        <input class="btn btn-primary" type="submit" value="Güncelle">
+                                    </a>
+                                }
+                            </fieldset>
+
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+

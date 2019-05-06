@@ -8,7 +8,7 @@ namespace PetAdvert.UI.Areas.Admin.Models.DTO
     public class GeneralSettingDTO : BaseDTO
     {
         public string Email { get; set; }
-        public short Telephone { get; set; }
+        public string Telephone { get; set; }
         public string Facebook { get; set; }
         public string Twitter { get; set; }
         public string instagram { get; set; }

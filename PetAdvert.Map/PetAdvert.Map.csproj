@@ -53,7 +53,6 @@
     <Compile Include="Option\CityMap.cs" />
     <Compile Include="Option\DistrictMap.cs" />
     <Compile Include="Option\GeneralSettingMap.cs" />
-    <Compile Include="Option\MessageMap.cs" />
     <Compile Include="Option\PettypeMap.cs" />
     <Compile Include="Option\QuestionAnswerMap.cs" />
     <Compile Include="Option\RaceMap.cs" />
