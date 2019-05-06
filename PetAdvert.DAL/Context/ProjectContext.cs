@@ -17,7 +17,7 @@ namespace PetAdvert.DAL.Context
     {
         public ProjectContext()
         {
-            Database.Connection.ConnectionString = "Server=.;Database=PetBasem;uid=tnr;pwd=123456;";
+            Database.Connection.ConnectionString = "Server=.;Database=BasPet;uid=tnr;pwd=123456;";
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

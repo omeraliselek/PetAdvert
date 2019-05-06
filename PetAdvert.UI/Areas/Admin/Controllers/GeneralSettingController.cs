@@ -76,8 +76,8 @@ namespace PetAdvert.UI.Areas.Admin.Controllers
             General.CopyrightText = data.CopyrightText;
             General.Googleplay = data.Googleplay;
             General.AppStore = data.AppStore;
-            General.SeoTitle = General.SeoTitle;
-            General.SeoDescription = General.SeoDescription;
+            General.SeoTitle = data.SeoTitle;
+            General.SeoDescription = data.SeoDescription;
             _generalSettingService.Update(General);
             TempData["Successful"] = "Transaction is successful.";
             //return Redirect("/Admin/GeneralSetting/Update");

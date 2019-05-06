@@ -22,4 +22,5 @@ namespace PetAdvert.Model.Option
         public string SeoTitle { get; set; }
         public string SeoDescription { get; set; }
     }
-}
+    }
+
